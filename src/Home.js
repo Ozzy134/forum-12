@@ -15,7 +15,7 @@ const Home = () => {
             <Content style={{ padding: '16px' }}>
                 <Breadcrumb style={{ margin: '16px 0' }}>
                     <Breadcrumb.Item>Home</Breadcrumb.Item>
-                    <Breadcrumb.Item>Page</Breadcrumb.Item>
+                    <Breadcrumb.Item>Categories</Breadcrumb.Item>
                 </Breadcrumb>
                 <div style={{ background: '#fff', padding: '16px', minHeight: '360px' }}>
                     {/* Ваш основной контент здесь */}

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, Typography, Tag } from 'antd';
-
+import { Card, Typography } from 'antd';
+import { Link } from 'react-router-dom';
 const { Title, Paragraph } = Typography;
 
 const Categories = ({ title, date, category }) => {
@@ -9,6 +9,7 @@ const Categories = ({ title, date, category }) => {
             <Title level={4}>{title}</Title>
             <Paragraph>{date}</Paragraph>
             <Paragraph>{category}</Paragraph>
+            <Link to={`/category/${category}`}>перейти</Link>
         </Card>
     );
 };

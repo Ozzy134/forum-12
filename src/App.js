@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import CategoryPage from './CategoryPage';
+import Category from './Category';
+import Discussion from "./Discussion";
 
 const App = () => {
     return (
@@ -9,7 +10,8 @@ const App = () => {
             <div>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    {/*<Route path="/category/:category" element={<CategoryPage />} />*/}
+                    <Route path="/category/:category" element={<Category />} />
+                    <Route path="/article/:id" element={<Discussion />} />
                 </Routes>
             </div>
         </Router>
@@ -17,3 +19,4 @@ const App = () => {
 };
 
 export default App;
+
